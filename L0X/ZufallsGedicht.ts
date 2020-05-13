@@ -1,6 +1,7 @@
 let subject: string[] = ["Peter", "Johannes", "Linda", "Eric", "Sabrina"];
 let verb: string[] = ["liebt", "hasst", "will", "braucht", "vergöttert"];
 let object: string[] = ["Limonade", "Lasagne", "Pizza", "Eis", "Toastbrot"];
+//Der Namespace muss glaube ich direkt am Anfang festgelegt werden
 namespace ZufallsGedicht {
     if (subject.length != verb.length || verb.length != object.length) {
         console.log("Alle Arrays müssen die selbe Anzahl Positionen haben");
@@ -22,6 +23,7 @@ namespace ZufallsGedicht {
         return vers;
     }
 
+//Funktionsparameter müssen einen _ haben    
     function pickWord(array: string[], index: number): string {
         
         return array.splice(index, 1).toString();
